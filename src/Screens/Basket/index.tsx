@@ -65,7 +65,7 @@ const Basket: React.FC<BasketProps> = ({route, navigation}) => {
             {/* Displaying item image */}
             <Image
               source={{
-                uri: item?.img,
+                uri: item.img,
               }}
               style={styles.itemImage}
             />

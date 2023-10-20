@@ -12,9 +12,6 @@ export type TAuthStack = {
 export type THomeStack = {
   Home: undefined;
   Detail: undefined;
-  // ScreenName: {
-  //   propsToSend: string;
-  // };
 };
 
 export type THomeScreen<T extends keyof THomeStack> = React.FC<
@@ -35,16 +32,8 @@ declare type ScreenComponentType<
   | React.ComponentType<{}>;
 
 export type TScreen<Stack extends ParamListBase> = {
-  //* commonly used.
   key: React.Key;
   name: keyof Stack;
   component: ScreenComponentType<Stack, keyof Stack> | React.FC<any>;
   options?: StackNavigationOptions;
-
-  //? not commonly used.
-  // navigationKey?: String;
-  // listeners?: unknown;
-  // getId?: ({ params }: { params: unknown }) => String | undefined;
-  // initialParams?: Partial<Stack[keyof Stack]>;
-  // children?: unknown;
 };

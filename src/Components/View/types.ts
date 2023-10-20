@@ -1,6 +1,6 @@
-import { ViewProps } from 'react-native';
-import { AnimateProps } from 'react-native-reanimated';
-import { FlexType } from 'src/config/styles';
+import {ViewProps} from 'react-native';
+import {AnimateProps} from 'react-native-reanimated';
+import {FlexType} from 'src/Config/styles';
 interface IAnimatedViewProps extends AnimateProps<ViewProps> {
   flexLayout?: FlexType | FlexType[];
   width?: number | string;

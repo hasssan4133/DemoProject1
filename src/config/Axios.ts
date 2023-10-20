@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {ENV} from 'src/config/env';
+import {ENV} from 'src/Config/env';
 import {getRedux} from 'src/Redux/function';
 
 interface IAxios {

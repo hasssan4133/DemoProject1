@@ -1,5 +1,5 @@
 import {ImageProps} from 'react-native';
-import {TColors} from 'src/config/globalStyles';
+import {TColors} from 'src/Config/globalStyles';
 
 export interface IImage extends ImageProps {
   size?: number;

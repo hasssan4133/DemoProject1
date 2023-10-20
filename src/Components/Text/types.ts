@@ -1,6 +1,6 @@
 import {TextProps} from 'react-native';
-import {TColors} from 'src/config/globalStyles';
-import {TypographyType} from 'src/config/styles';
+import {TColors} from 'src/Config/globalStyles';
+import {TypographyType} from 'src/Config/styles';
 
 export interface ITextProps extends TextProps {
   color?: TColors;

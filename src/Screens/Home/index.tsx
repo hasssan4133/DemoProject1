@@ -7,7 +7,7 @@ import styles from './style';
 import Image from 'src/Components/Image';
 import {useNavigation} from '@react-navigation/native';
 import Header from 'src/Components/Header';
-import {GETDETAILS} from 'src/Redux/Reducers/API/actions';
+import {getDetails} from 'src/Redux/Reducers/API/actions';
 import {useSelector} from 'react-redux';
 import {StateType} from 'src/Redux/Reducers/API/reducers'; // Assuming you have StateType exported in the reducers file
 
@@ -35,7 +35,7 @@ const Home: React.FC<THomeScreen<'Home'>> = ({}) => {
 
   // Fetch the details when the component is mounted
   useEffect(() => {
-    GETDETAILS(({success}) => {
+    getDetails(({success}) => {
       if (success) {
         setIsLoading(false);
       }

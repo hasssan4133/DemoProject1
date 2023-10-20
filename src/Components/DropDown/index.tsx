@@ -3,7 +3,7 @@
 import * as React from 'react';
 import DropDownPicker from 'react-native-dropdown-picker';
 import Icon, {IconType} from 'react-native-dynamic-vector-icons';
-import globalStyles from 'src/config/globalStyles';
+import globalStyles from 'src/Config/globalStyles';
 import Text from '../Text';
 import View from '../View';
 import {defaultProps, DropDownProps} from './types';
