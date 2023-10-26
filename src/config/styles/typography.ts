@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {fontRef} from '../screenSize';
+import {fontRef} from '../ScreenSize';
 
 export const TypographyStyles = StyleSheet.create({
   bold: {

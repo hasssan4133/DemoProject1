@@ -1,6 +1,6 @@
 import axios from 'axios';
 import {ENV} from 'src/Config/env';
-import {getRedux} from 'src/Redux/function';
+import {getRedux} from 'src/Redux/ReduxFunctions';
 
 interface IAxios {
   method: string;
@@ -11,7 +11,7 @@ interface IAxios {
 class Axios {
   static request({method, url, data = {}}: IAxios) {
     const {state} = getRedux();
-    const token = state.auth.token;
+    const token = state?.auth?.token;
     return axios({
       method,
       url: ENV.base_url + url,

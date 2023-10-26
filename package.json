@@ -70,6 +70,13 @@
     "preset": "react-native",
     "transformIgnorePatterns": [
       "node_modules/(?!(react-native|@react-native|react-native-reanimated|react-native-dropdownalert|react-native-event-listeners|redux-persist)/)"
-    ]
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|webp|svg)$": "<rootDir>/__mocks__/FileMock.tsx",
+      "^react-native-gesture-handler$": "<rootDir>/__mocks__/ReactNativeGestureHandler.tsx",
+      "^react-native-bootsplash$": "<rootDir>/__mocks__/ReactNativeBootSplash.tsx"
+
+
+    }
   }
 }

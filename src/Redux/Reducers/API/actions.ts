@@ -1,5 +1,8 @@
 import {showSnackbar} from 'src/Components/Snackbar';
-import {getRedux} from 'src/Redux/function';
+import API from 'src/Config/API';
+import Axios from 'src/Config/Axios';
+
+import {getRedux} from 'src/Redux/ReduxFunctions';
 
 export const SHOP_DATA = 'SHOP_DATA';
 export const ADD_TO_BASKET = 'ADD_TO_BASKET';
@@ -7,8 +10,9 @@ export const REMOVE_FROM_BASKET = 'REMOVE_FROM_BASKET';
 
 export const getDetails = callback => {
   const {dispatch} = getRedux();
-  fetch('https://my-json-server.typicode.com/benirvingplt/products/products')
-    .then(response => response.json())
+  const {method, url} = API.LISTINGS;
+
+  Axios.request({method, url})
     .then(data => {
       dispatch({
         type: SHOP_DATA,

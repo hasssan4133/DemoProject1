@@ -1,7 +1,7 @@
 import {LayoutAnimation, PermissionsAndroid, ViewStyle} from 'react-native';
 import {EventRegister} from 'react-native-event-listeners';
 import {ENV} from './env';
-import globalStyles from './globalStyles';
+import globalStyles from './GlobalStyles';
 
 export const LayoutAnimate = (time: number = 500) => {
   LayoutAnimation.configureNext({

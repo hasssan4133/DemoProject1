@@ -1,3 +1,3 @@
 export default {
-  LOGIN: {method: 'POST', url: 'auth/login'},
+  LISTINGS: {method: 'GET', url: 'benirvingplt/products/products'},
 };

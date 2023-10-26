@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image as RNImage} from 'react-native';
-import globalStyles from 'src/Config/globalStyles';
-import {heightRef, widthRef} from 'src/Config/screenSize';
+import globalStyles from 'src/Config/GlobalStyles';
+import {heightRef, widthRef} from 'src/Config/ScreenSize';
 import {IImage} from './types';
 
 const Image = ({

@@ -1,4 +1,4 @@
-import {heightRef, widthRef} from './screenSize';
+import {heightRef, widthRef} from './ScreenSize';
 export const MEDIA_HEIGHT = 295 * heightRef;
 const globalStyles = {
   Theme: {
